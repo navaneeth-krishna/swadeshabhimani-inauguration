@@ -18,12 +18,13 @@ body {
   .video-play-button {
     box-sizing: content-box;
     display: block;
-    width: 42px;
-    height: 54px;
+    width: 32px;
+    height: 44px;
     background: var(--primary-dark);
     border-radius: 50%;
     padding: 18px 20px 18px 28px;
-    scale: 2.0;
+    -webkit-transform:scale(2.0);
+    transform:scale(2.0);
   }
   
   .video-play-button:before {
@@ -34,8 +35,8 @@ body {
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     display: block;
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     background: var(--primary-accent);
     border-radius: 50%;
     animation: pulse-border 1500ms ease-out infinite;
@@ -49,11 +50,12 @@ body {
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     display: block;
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     background: var(--primary-dark);
     border-radius: 50%;
     transition: all 200ms;
+    
   }
   
   .video-play-button:hover:after {
